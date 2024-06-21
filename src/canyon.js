@@ -7,7 +7,7 @@ function reportCoverageFunction() {
     },
     body:JSON.stringify({
       coverage:window.__coverage__,
-      commitSha:'xxx',
+      commitSha:'58f249e185ad3c8f632ba49e8bc5bcd770b38a58',
       instrumentCwd:'/app',
       projectID:'59119044'
     })
