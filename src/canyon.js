@@ -11,7 +11,7 @@ function reportCoverageFunction() {
       instrumentCwd:'/app',
       projectID:'59119044'
     })
-  })
+  }).then(res=>res.json())
 }
 export const initCanyon = () => {
   document.addEventListener('visibilitychange', reportCoverageFunction)
