@@ -10,7 +10,7 @@
     "scripts": {
         "build": "webpack --config webpack.prod.js",
         "dev": "webpack serve --open --config webpack.dev.js",
-        "start": "http-server ./dist -p 7002 -c-1 --cors",
+        "start": "http-server ./dist -p 8080 -c-1 --cors",
         "test": "jest"
     },
     "devDependencies": {
