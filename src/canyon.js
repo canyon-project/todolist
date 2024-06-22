@@ -1,5 +1,7 @@
+// const dsn = `https://app.canyoncov.com`
+const dsn = `http://localhost:3000`
 function reportCoverageFunction() {
-  return fetch(`https://app.canyoncov.com/coverage/client`,{
+  return fetch(`${dsn}/coverage/client`,{
     method:'POST',
     headers: {
       Authorization:`Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndyX3poYW5nMjUiLCJpZCI6MTAxMjA1ODAsImlhdCI6MTcxODQzMjc1OSwiZXhwIjoyMDM0MDA4NzU5fQ.2C7hUfC_uVykgvr4y4cw3SW9BO5K187921IVdrFGY9c`,
