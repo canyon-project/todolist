@@ -1,5 +1,5 @@
 // const dsn = `https://app.canyoncov.com`
-const dsn = `http://localhost:3000`
+// const dsn = `http://localhost:3000`
 function reportCoverageFunction() {
   return fetch(`${dsn}/coverage/client`,{
     method:'POST',
@@ -13,9 +13,12 @@ function reportCoverageFunction() {
       instrumentCwd:'/app',
       projectID:'59119044'
     })
-  }).then(res=>res.json())
+  }).then(res=>res.json()).catch(err=>{
+    console.log(err)
+    return {}
+  })
 }
 export const initCanyon = () => {
-  document.addEventListener('visibilitychange', reportCoverageFunction)
-  window.reportCoverage = reportCoverageFunction;
+  // document.addEventListener('visibilitychange', reportCoverageFunction)
+  // window.reportCoverage = reportCoverageFunction;
 }
