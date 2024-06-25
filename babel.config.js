@@ -1,3 +1,3 @@
 module.exports={
-	plugins: ['istanbul','canyonpw']
+	plugins: ['istanbul','canyon']
 }
